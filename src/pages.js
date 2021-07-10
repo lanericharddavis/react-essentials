@@ -4,18 +4,24 @@ import { Link, useLocation, Outlet } from "react-router-dom";
 export function Home() {
   return (
     <div>
-      <h1>[Company Website]</h1>
       <nav>
         <Link to="about">About</Link>
         <Link to="events">Events</Link>
         <Link to="contact">Contacts</Link>
       </nav>
+      <h1>[Company Website]</h1>
     </div>
   );
 }
 export function About() {
   return (
     <div>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="services">Services</Link>
+        <Link to="history">History</Link>
+        <Link to="location">Location</Link>
+      </nav>
       <h1>[About]</h1>
       <Outlet />
     </div>
@@ -49,6 +55,9 @@ export function Location() {
 export function Events() {
   return (
     <div>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
       <h1>[Events]</h1>
     </div>
   );
@@ -56,6 +65,9 @@ export function Events() {
 export function Contact() {
   return (
     <div>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
       <h1>[Contact]</h1>
     </div>
   );

@@ -3,7 +3,7 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import {Home, About, Events, Contact, Whoops404, Services, CompanyHistory, Location } from "./pages";
 
-function App({}) {
+function App() {
 
   return (
     <div>
